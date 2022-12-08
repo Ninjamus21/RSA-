@@ -94,19 +94,19 @@ d = 533
 
 # hvis der er en sætning som er krypterede med nøglen e, n fx.
 
-besked = 1528
+besked = 45
 print("Dette er den originale besked ", besked)
 
 # kryptering af besked
 
 
-hemmligeBesked = abs(besked**e) % abs(3131)
+hemmligeBesked = besked**e % 3131
 
-print("Dette er den hemmelige besked ", int(hemmligeBesked))
+print("Dette er den hemmelige besked ", str(hemmligeBesked))
 
 dekrypteredeBesked = (hemmligeBesked**d % 3131)
 
-print("Dette er den dekrypterede besked ", dekrypteredeBesked)
+print("Dette er den dekrypterede besked ", str(dekrypteredeBesked))
 
 
 
